@@ -264,24 +264,16 @@ else if ($text == 'Q10:はい' || $text == 'Q10:いいえ') {
 } else {
 
   $response_format_text = [
-    "type" => "template",
-    "altText" => "Q1:人付き合いが好き？（はい／いいえ）",
-    "template" => [
-        "type" => "confirm",
-        "text" => "こんにちは！！\n僕ライト！くんです。ライト！\nあなたにぴったりの保険のエキス
-パートを紹介するよ♪\nこれから10個の質問をするから答えてね！♪\n\nQ1:\n人付き合いが好き？",
-        "actions" => [
+    "type" => "messages",
+    "messages" => [
             [
-              "type" => "message",
-              "label" => "はい",
+              "type" => "text",
               "text" => "Q1:はい"
             ],
             [
-              "type" => "message",
-              "label" => "いいえ",
+              "type" => "text",
               "text" => "Q1:いいえ"
             ]
-        ]
     ]
   ];
 }
