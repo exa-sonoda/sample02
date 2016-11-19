@@ -263,7 +263,7 @@ else if ($text == 'Q10:はい' || $text == 'Q10:いいえ') {
   ];
 } else {
 
-  $response_format_text = [
+  $response_format_text = {
             [
               "type" => "text",
               "text" => "Q1:はい"
@@ -272,7 +272,7 @@ else if ($text == 'Q10:はい' || $text == 'Q10:いいえ') {
               "type" => "text",
               "text" => "Q1:いいえ"
             ]
-  ];
+  };
 }
 
 $post_data = [
